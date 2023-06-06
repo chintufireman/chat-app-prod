@@ -22,7 +22,7 @@ public class Config implements WebSocketMessageBrokerConfigurer {
 
 	@Override
 	public void registerStompEndpoints(StompEndpointRegistry registry) {
-		registry.addEndpoint("/server1").setAllowedOrigins("http://192.168.1.9:3000", "http://localhost:3000")
+		registry.addEndpoint("/server1").setAllowedOrigins("http://chatkaro.harshwardhanshettyprofile.website","http://192.168.1.9:3000", "http://localhost:3000")
 				.withSockJS();
 	}
 

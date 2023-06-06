@@ -1,0 +1,92 @@
+2023-06-02 19:43:16.775 [main] INFO  com.chatapp.ChatApplication - Starting ChatApplication using Java 17.0.6 on localhost with PID 498250 (/root/projects/chat-app-prod/target/classes started by root in /root/projects/chat-app-prod)
+2023-06-02 19:43:16.776 [main] DEBUG com.chatapp.ChatApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-06-02 19:43:16.780 [main] INFO  com.chatapp.ChatApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-02 19:43:17.556 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-06-02 19:43:17.610 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 3 MongoDB repository interfaces.
+2023-06-02 19:43:18.182 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9191 (http)
+2023-06-02 19:43:18.192 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-02 19:43:18.193 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-02 19:43:18.287 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-02 19:43:18.288 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1454 ms
+2023-06-02 19:43:18.474 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "5.15.0-60-generic"}, "platform": "Java/Oracle Corporation/17.0.6+9-LTS-190"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@f3560d4]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-06-02 19:43:18.491 [cluster-rtt-ClusterId{value='647a465645507b438a424b6e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:130}] to localhost:27017
+2023-06-02 19:43:18.492 [cluster-ClusterId{value='647a465645507b438a424b6e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:131}] to localhost:27017
+2023-06-02 19:43:18.496 [cluster-ClusterId{value='647a465645507b438a424b6e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=32741987}
+2023-06-02 19:43:18.836 [main] DEBUG c.c.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2023-06-02 19:43:18.877 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:132}] to localhost:27017
+2023-06-02 19:43:19.670 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@eb91027, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@459d2ee6, org.springframework.security.web.context.SecurityContextPersistenceFilter@4fbe486c, org.springframework.security.web.header.HeaderWriterFilter@7a3c99f1, org.springframework.web.filter.CorsFilter@5342eec5, org.springframework.security.web.authentication.logout.LogoutFilter@65d90b7f, com.chatapp.security.JwtAuthenticationFilter@1961d75a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@636fccb0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7aa15a80, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60e47aab, org.springframework.security.web.session.SessionManagementFilter@1a3b1f7e, org.springframework.security.web.access.ExceptionTranslationFilter@2b2b7e3c, org.springframework.security.web.access.intercept.AuthorizationFilter@6d35ff7b]
+2023-06-02 19:43:19.832 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9191 is already in use
+2023-06-02 19:43:19.854 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-06-02 19:43:19.865 [main] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [BufferPoolPruner-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.6/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.6/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+2023-06-02 19:43:19.879 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-02 19:43:19.893 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9191 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9191 or configure this application to listen on another port.
+
+2023-06-02 19:44:33.545 [main] INFO  com.chatapp.ChatApplication - Starting ChatApplication using Java 17.0.6 on localhost with PID 498333 (/root/projects/chat-app-prod/target/classes started by root in /root/projects/chat-app-prod)
+2023-06-02 19:44:33.547 [main] DEBUG com.chatapp.ChatApplication - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-06-02 19:44:33.551 [main] INFO  com.chatapp.ChatApplication - No active profile set, falling back to 1 default profile: "default"
+2023-06-02 19:44:34.308 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-06-02 19:44:34.364 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 3 MongoDB repository interfaces.
+2023-06-02 19:44:34.929 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9191 (http)
+2023-06-02 19:44:34.938 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-02 19:44:34.939 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-02 19:44:35.042 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-02 19:44:35.042 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1439 ms
+2023-06-02 19:44:35.213 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "5.15.0-60-generic"}, "platform": "Java/Oracle Corporation/17.0.6+9-LTS-190"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@51b77cdf]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-06-02 19:44:35.226 [cluster-ClusterId{value='647a46a35b95ce4bc669d969', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:137}] to localhost:27017
+2023-06-02 19:44:35.230 [cluster-ClusterId{value='647a46a35b95ce4bc669d969', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=22038606}
+2023-06-02 19:44:35.234 [cluster-rtt-ClusterId{value='647a46a35b95ce4bc669d969', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:136}] to localhost:27017
+2023-06-02 19:44:35.593 [main] DEBUG c.c.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2023-06-02 19:44:35.633 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:138}] to localhost:27017
+2023-06-02 19:44:36.377 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e3d168e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@149b53fa, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c31e410, org.springframework.security.web.header.HeaderWriterFilter@15914bb5, org.springframework.web.filter.CorsFilter@73be4cdd, org.springframework.security.web.authentication.logout.LogoutFilter@30fa8a6b, com.chatapp.security.JwtAuthenticationFilter@2f995afc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6febec41, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c1ea7be, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@751686aa, org.springframework.security.web.session.SessionManagementFilter@7ba1cdbe, org.springframework.security.web.access.ExceptionTranslationFilter@636fccb0, org.springframework.security.web.access.intercept.AuthorizationFilter@4e85dcb2]
+2023-06-02 19:44:36.533 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9191 is already in use
+2023-06-02 19:44:36.546 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-06-02 19:44:36.551 [main] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [BufferPoolPruner-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.6/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.6/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+2023-06-02 19:44:36.561 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-02 19:44:36.572 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9191 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9191 or configure this application to listen on another port.
+
